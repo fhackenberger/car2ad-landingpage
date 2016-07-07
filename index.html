@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
 
-    <title>Car2ad - Drive for free</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" href="//codepen.io/assets/reset/normalize.css">
+<title>Car2ad - Drive for free</title>
+<link href='http://fonts.googleapis.com/css?family=Lato::100normal,100italic,300normal,300italic,400normal,400italic,700normal,700italic,900normal,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://codepen.io/assets/reset/normalize.css">
+<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css">
 
-    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css">
-
-        <style>
-      body, html {
-  background: #007bff;
-  height: 100%;
+<style>
+body, html {
+	background: #000;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 body h1, body h2, body h3, body h4, body h6, html h1, html h2, html h3, html h4, html h6 {
-  color: #fff;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
+	color: #a6c2be;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 }
 
 .row {
-  background: #e74c3c;
 }
 .row.full-width {
-  background: #27ae60;
-  max-width: 100% !important;
+	max-width: 100% !important;
 }
-.row.full-width.diff {
-  background: #40DBE5;
+.row.full-width .columns {
+	flex: 1;
+}
+.row.full-height {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row.full-height .columns {
+	flex: 1;
+}
+.row.full-width .columns img {
+	display: block;
+	margin-left: auto; margin-right: auto;
+	width: 20em;
+}
+.row.full-width.diff .columns .row {
+	background: #a6c2be;
+}
+.row.full-width.diff h4, .row.full-width.diff h4 a {
+	color: #fff !important;
 }
 .row.full-width .row {
-  margin: 0 auto;
-  max-width: 62.5rem;
-  background: inherit;
+	margin: 0 auto;
+	max-width: 62.5rem;
+	background: inherit;
 }
 
-    </style>
+</style>
 
-    <script>
-  window.console = window.console || function(t) {};
+<script>
+	window.console = window.console || function(t) {};
 </script>
 
-    
-    
-  <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style><meta class="foundation-mq-topbar"></head>
+<meta class="foundation-mq-small">
+<meta class="foundation-mq-medium">
+<meta class="foundation-mq-large">
+<meta class="foundation-mq-xlarge">
+<meta class="foundation-mq-xxlarge">
+<style></style>
+<meta class="foundation-mq-topbar">
+</head>
 
-  <body translate="no">
+<body translate="no">
 
-    <div class="row full-width">
-  <div class="columns">
-    <h2>This is a full page width row that will allow all objects inside to span the entire width.</h2>
-  </div>
+<div class="row full-width full-height">
+	<div class="columns">
+		<img src="logo.plain.svg" alt="car2ad Logo"/>
+		<h3>Coming soon!</h3>
+	</div>
 </div>
 
 <div class="row full-width diff">
-  <div class="columns">
-    <div class="row" style="background: #E74C3C;">
-      <div class="columns">
-        <h4>This is a row the respects the grid even with a full width background row.</h4>        
-      </div>
-    </div>
-  </div>
+	<div class="columns">
+		<div class="row" style="background: #a6c2be; color: #ff;">
+			<div class="columns">
+				<h4>Get in touch: <a href="mailto:info@car2ad.de">info@car2ad.de</a></h4>        
+			</div>
+		</div>
+	</div>
 </div>
-      <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-ddaa1eeb67d762ab8aad46508017908c.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js"></script>
-
-        <script>
-      $(document).foundation();
-      //# sourceURL=pen.js
-    </script>
-
-    
-    <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js"></script>
+<script>
+$(document).foundation();
 </script>
-
-    
-  
-
  
 </body>
